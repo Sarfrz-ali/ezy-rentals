@@ -1,0 +1,26 @@
+@import "_common";
+
+.form{
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+    padding: 20px 40px;
+    margin: 20vh auto;
+    @include flexbox(space-between, center,column);
+
+    input {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+    }
+    p{
+        margin-top: 8px;
+    }
+    a{
+        @include a($primary-color,none);
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

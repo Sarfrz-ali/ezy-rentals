@@ -1,0 +1,58 @@
+$primary-color: #f43600;
+$font: 15px sans-serif;
+
+
+@mixin flexbox($jc, $ai,$dr) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $dr;
+}
+@mixin a($color,$border){
+    text-decoration: none;
+    color:$color;
+    border:$border;
+}
+.wrapper {
+    padding: 0px 50px;
+}
+
+// Buttons
+.teriary-btn{
+    color: #f43600;
+    border: 1px solid #f43600;
+    padding: 8px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+        background-color: #ffd8cc1a;
+    }
+}
+button.x-large {
+    background:$primary-color;
+    border: none;
+    font-size: 0.9em;
+    padding: 12px 45px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover{
+        background-color: #ff4613;
+    }
+}
+
+
+
+// Media Query
+@media(max-width:600px){
+
+    .wrapper{
+        padding: 0px 20px;
+    }
+    button.x-large{
+        font-size: 0.5em;
+        width: 100%;
+    }
+}

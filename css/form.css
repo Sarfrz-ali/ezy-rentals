@@ -1,0 +1,84 @@
+.wrapper {
+  padding: 0px 50px;
+}
+
+.teriary-btn {
+  color: #f43600;
+  border: 1px solid #f43600;
+  padding: 8px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.teriary-btn:hover {
+  background-color: #ffd8cc1a;
+}
+
+button.x-large {
+  background: #f43600;
+  border: none;
+  font-size: 0.9em;
+  padding: 12px 45px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.x-large:hover {
+  background-color: #ff4613;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 0px 20px;
+  }
+  button.x-large {
+    font-size: 0.5em;
+    width: 100%;
+  }
+}
+
+.form {
+  gap: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 500px;
+  padding: 20px 40px;
+  margin: 20vh auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.form p {
+  margin-top: 8px;
+}
+
+.form a {
+  text-decoration: none;
+  color: #f43600;
+  border: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=form.css.map */
